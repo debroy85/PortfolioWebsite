@@ -1,0 +1,253 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,200&family=Source+Code+Pro&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar{
+    position: absolute;
+    background-color: rgb(162, 157, 157);
+    /* width: 350px; */
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    transition: transform 0.4s ease-in;
+    
+}
+
+.sidebar nav{
+    padding: 20px;
+
+}
+
+.sidebar nav li{
+    list-style: none;
+    font-size: 24px;
+    padding: 35px 0;
+}
+
+.sidebar nav li a{
+    text-decoration: none;
+    color:black;
+}
+.main{
+    
+    width: 85vw;
+}
+.container{
+    display: flex;
+
+}
+
+.info{
+    
+    height: 58vh;
+    width: 80vw;
+   display: flex;
+    margin: 120px auto;
+    justify-content: space-around;
+}
+
+.devInfo{
+    font-size: 16px;
+    margin-left: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family:  'Poppins', sans-serif;
+
+}
+
+.devPhoto img{
+    height: 58vh;
+    
+}
+
+.welcome{
+    font-size: 3em;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: lighter;
+    
+}
+.name{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 3em;
+    font-weight: bolder;
+
+}
+.about{
+    font-size: 2.5em;
+}
+.moreabout{
+    font-size: 2em;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 30px;
+}
+.buttons{
+    margin-top: 2.25em;
+    font-size: 16px;
+}
+.btn{
+    padding: 9px 15px;
+    border-radius: 20px;
+    color: white;
+    background-color: dodgerblue;
+    font-weight: bold;
+    font-size: 2em;
+    margin: 3px 3px;
+    cursor: pointer;
+}
+
+.btn-small{
+   
+    font-size: 15px;
+    padding: 8px 13px;
+    margin: 12px 0;
+}
+.btn:hover{
+    background-color: white;
+    color: dodgerblue;
+}
+
+.contactpage{
+    font-family: 'Poppins', sans-serif;
+    padding: 0 40px;
+    margin: 90px;
+    
+}
+.contactpage h1{
+    font-family: 'Source Code Pro', monospace;
+    padding: 15px 0;
+
+}
+
+.contactpage form{
+    margin: 0 50px;
+}
+
+.contactpage form div{
+    padding: 10px 0px;
+    display: flex;
+flex-direction: column;
+}
+.contactpage form div input{
+   width: 60vw;
+   border-radius: 3px;
+   margin: 6px 0 0 0;
+   padding: 5px;
+}
+
+#emailHelp{
+    font-size:12px;
+    color:red;
+    margin: 0 5px;
+    padding: 3px 0 0;
+}
+
+.aItem{
+    margin: 20px;
+    font-family: 'Poppins', sans-serif; 
+}
+
+.achievements{
+    margin: 90px 90px;
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    margin: 25px;
+}
+
+p{
+    font-family: 'Source Code Pro', monospace;
+}
+
+.intro{
+    margin: 30px 88px;
+}
+
+.intro p a{
+    text-decoration: none;
+    color: dodgerblue;
+}
+.intro h2{
+    font-family: 'Poppins', sans-serif;
+    margin: 15px;
+}
+
+.intro p{
+    font-family: 'Source Code Pro', monospace;
+    margin: 15px;
+}
+
+.skillContainer{
+    padding: 15px;
+}
+
+.skillItem{
+    display: flex;
+    align-items: center;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 800px ;
+}
+.skill{
+    width: 250px;
+    height: 10px;
+    background-color: red;
+    border: 3px solid black;
+}
+
+.hundred{
+    width:250px;
+    background-color: red;
+}
+
+.seventyfive{
+    width: 190px;
+    background-color: orangered;
+}
+.fifty{
+    width:125px;
+    background-color: orange;
+}
+.twentyfive{
+    width: 55px;
+    background-color: yellow;
+}
+
+.sidebarDisappear{
+    transform: translate(-443px,0);
+    position: absolute;
+}
+.menu{
+    position: absolute;
+    cursor: pointer;
+    top:10px;
+    left: 10px;
+}
+.ham{
+    margin-top: 10px;
+}
+.cross{
+    margin-top: 10px;
+    margin-left: 143px;
+}
+
+@media (max-width:1275px){
+    .buttons{
+        font-size: 6px;
+    }
+    .devInfo{
+        font-size: 10px;
+    }
+   .devPhoto{
+    display: none;
+}
+    .intro, .achievements,.contactpage{
+    margin:50px 8px;
+}   
+}
+
